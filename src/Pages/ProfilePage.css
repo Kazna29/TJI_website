@@ -1,0 +1,24 @@
+
+.profile-page {
+  position: absolute;
+  top: 80px; /* Positioned below the fixed header */
+  left: 0;
+  width: 100%; /* Take full width */
+  padding-left: 0;
+}
+
+.profile-section {
+  position: relative;
+  width: 100%;
+}
+
+.featured-section {
+  position: relative;
+  float: left;
+  top: 100px;
+}
+
+main {
+  grid-column: 2; /* Middle column */
+  padding-top: 0px; /* Push all content down to avoid overlapping navbar */
+}

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    /* Ensure the navbar stays on top */
+    top: 50px;
+    height: 50px;
+    left: 0;
+    width: 100vw;
+    /* Span the full viewport width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #082525;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Bring the navbar to the front */
+    box-sizing: border-box;
+    /* Include padding in the width */
+}
+
+.navbar .logo svg {
+    height: 40px;
+}
+
+.navbar .nav-icons {
+    display: flex;
+    flex-grow: 1; /* Allows it to push content */
+    justify-content: center; /* Aligns icons to the center */
+    gap: 50px;
+    align-items: center;
+    margin-left: auto; /* Pushes it to the right */
+    cursor: pointer;
+}
+
+.navbar .nav-icons svg {
+    width: 24px;
+    height: 24px;
+    fill: #33BD94;
+    cursor: pointer;
+    transition: fill 0.2s;
+}
+
+.navbar .nav-icons svg:hover {
+    fill: #fff;
+}
+
+.profile-section svg {
+    width: 48px !important; /* Ensure width and height are equal */
+    height: 48px !important; /* Ensure width and height are equal */
+    fill: #33BD94;
+    cursor: pointer;
+    transition: fill 0.2s, transform 0.2s;
+    border: 2px solid blue;
+    border-radius: 50% !important; /* Force the profile to be circular */
+    overflow: hidden; /* Ensures content stays within the circle */
+}
+.profile-section svg:hover {
+    fill: #fff;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+svg:hover circle {
+    stroke: #fff;
+    /* Change the stroke color */
+    transition: stroke 0.2s ease;
+}
+
+svg:hover path {
+    stroke: #fff;
+    /* Change the path stroke color */
+    transition: stroke 0.2s ease;
+}
+
+.navbar .nav-icons svg:hover rect {
+    stroke: #fff;
+    /* Change the stroke color on hover */
+    stroke-width: 40;
+    /* Increase stroke size for emphasis */
+}
+
+.hire {
+    scale: 1.25;
+}

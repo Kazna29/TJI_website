@@ -1,0 +1,103 @@
+/* Container for buttons with horizontal scrolling */
+.container {
+    display: flex;
+    width: 100%;
+    overflow-x:scroll; /* Enables horizontal scrolling */
+    scrollbar-width: thin;/*Hides scrollbar in Firefox */
+    scroll-behavior: auto;
+    scrollbar-color: #030f0f;
+  }
+  
+  .container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari/Edge */
+  }
+  
+  /* Flex container for buttons */
+  .languageButtonsContainer {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of the container itself */
+    width: 100%; /* Ensure it takes up the full width of the parent */
+  }
+  
+  .languageButtons {
+    display: inline-flex; /* Keep buttons in one row */
+    gap: 10px; /* Spacing between buttons */
+    background-color: #030f0f;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0; /* Padding around buttons */
+    margin: 0;
+    min-width: max-content; /* Ensure the container's width adapts to its content */
+  }
+  
+  
+  /* Individual button styles */
+  .languageButton {
+    border-radius: 10px;
+    height: 30px; /* Increased height for more spacious buttons */
+    background-color: #030f0f;
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.5);
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    white-space: nowrap;
+    display: flex; /* Flex to center text */
+    justify-content: center; /* Horizontally center text */
+    align-items: center; /* Vertically center text */
+    padding: 0 20px; /* Increased padding inside buttons */
+    min-width: 120px; /* Increased minimum width */
+    transition: transform 0.3s ease-in-out;
+    width: auto; /* Adjusts the width based on content */
+    
+  }
+  
+  /* Hover effect on buttons */
+  .languageButton:hover {
+    box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.75);
+    
+  }
+  
+  /* Extra padding for different buttons */
+  .firstChild {
+    padding: 0 24px;
+  }
+  
+  .secondChild {
+    padding: 0 26px;
+  }
+  
+  .thirdChild {
+    padding: 0 28px;
+  }
+  
+  .fourthChild {
+    padding: 0 30px;
+  }
+  
+  .fifthChild {
+    padding: 0 32px;
+  }
+  
+  .sixthChild {
+    padding: 0 34px;
+  }
+  
+  .seventhChild {
+    padding: 0 36px;
+  }
+  
+  .eightChild {
+    padding: 0 38px;
+  }
+  
+  .ninthChild {
+    padding: 0 40px;
+  }
+  
+  .lastChild {
+    padding: 0 42px;
+  }
+  
+  

@@ -1,0 +1,44 @@
+/* Grid Layout for 3x3 grid */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  grid-template-rows: repeat(3, 1fr); /* 3 rows per column */
+  gap: 16px; /* Space between grid items */
+  width: 100%;
+  min-width: 0px; /* Maximum width of the grid container */
+}
+
+/* Center the entire grid content in the container */
+.featured-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.container{
+  width: 1100px;
+}
+.featured-item {
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.post-container {
+  width: 100%;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.post-card-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

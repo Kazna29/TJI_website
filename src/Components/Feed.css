@@ -1,0 +1,79 @@
+/* src/App.css */
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Left: 1 part, Middle: 2 parts, Right: 1 part */
+  gap: 10px; /* Optional gap between sections */
+  width: 100%; /* Page width */
+  height: fit-content; /* Page height */
+  background-color: #030f0f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-sidebar, .home, .right-sidebar {
+  padding: 20px;
+  background-color: #030f0f;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+}
+.left-sidebar{
+width: fit-content;
+}
+.right-sidebar{
+  
+ width: fit-content;
+}
+.home {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 100dvw;
+}
+
+.feed-container {
+  flex:1;
+  max-width: 64dvw;
+  background-color: #121d1d;
+  padding: 0px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.6);
+}
+
+.feed {
+  height: auto; /* Allow Feed to expand with content */
+  min-height: 100vh; /* Optional: Full viewport height */
+ 
+}
+
+.language-buttons-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of buttons */
+  max-width: 100%; /* Takes the entire width of the middle section */
+  padding: 10px;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* Optional: smooth scrolling */
+}
+
+
+.language-buttons-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.language-buttons-container::-webkit-scrollbar-thumb {
+  background-color: #1e2a2a;
+  border-radius: 4px;
+}
+
+.language-buttons-container::-webkit-scrollbar-track {
+  background: #121d1d;
+}
+
+.post {
+  margin: 10px 0; /* Controlled vertical spacing */
+  padding: 10px; /* Add internal spacing if needed */
+  box-sizing: border-box; /* Include padding in height calculation */
+ 
+}
+

@@ -1,0 +1,277 @@
+.post {
+    width: 100%; /* Set the width of the post container */
+    max-width: 100%; /* Ensure it spans the full container width */
+    margin: 10px 0; /* 10px space at the top and bottom */
+    padding: 0; /* Remove internal padding (optional) */
+    box-sizing: border-box; /* Include padding/border in total width/height */
+}
+
+.post .post-card-wrapper {
+    width: 100%; /* Make PostCard take up the full width of its parent */
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure the container takes up the full available width */
+    margin: 0; /* Remove additional margin from the container */
+    padding: 0; /* Remove padding if unnecessary */
+}
+
+.post-card-wrapper {
+    border-radius: 30px;
+    background-color: rgba(8, 37, 37, 1);
+    display: flex;
+    width: calc(100% - 36px); /* Subtract padding/margin to prevent overflow */
+    flex-direction: column;
+    align-items: start;
+    padding: 15px 18px 9px;
+    margin: 0 auto; /* Center it horizontally */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+
+.post-header {
+    align-self: stretch;
+    display: flex;
+    gap: 10px;
+    color: rgba(255, 255, 255, 1);
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.user-role {
+    align-self: start;
+    font: 20px Inter, sans-serif;
+}
+
+.user-meta {
+    display: flex;
+    justify-content: space-between;
+    /* Align items at the ends */
+    align-items: center;
+    /* Ensure vertical alignment */
+    width: 100%;
+    /* Make the container span full width */
+    letter-spacing: -0.3px;
+    margin-top: 5px;
+    font: 16px La Belle Aurore, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    /* Slight transparency for a modern look */
+}
+
+.user-name {
+    font-weight: bold;
+    /* Optional: Emphasize the name */
+}
+
+.user-details {
+    white-space: nowrap;
+    /* Prevent line breaks */
+    text-align: right;
+    /* Align text within the span */
+}
+
+
+.menu-icon {
+    aspect-ratio: 0.29;
+    object-fit: contain;
+    object-position: center;
+    width: 5px;
+    margin-top: 8px;
+    margin-left: auto;
+    /* Push the icon to the right */
+    cursor: pointer;
+    /* Optional: Make it interactive */
+    background: transparent;
+    border: none;
+}
+
+.post-title {
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: -0.3px;
+    margin-top: 4px;
+    font: 400 20px Inter, sans-serif;
+}
+
+.post-image {
+    aspect-ratio: 1.8;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    align-self: stretch;
+    margin-top: 13px;
+}
+
+.action-buttons {
+    display: flex;
+    margin-top: 9px;
+    align-items: center;
+    gap: 33px;
+}
+
+.action-icon {
+    aspect-ratio: 1.26;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    cursor: pointer;
+    background: transparent;
+    /* Remove white box */
+    border: none;
+    /* Remove default button styles */
+}
+
+.comment-section {
+    display: flex;
+    margin-top: 6px;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    /* Center align items */
+}
+
+.comment-input-wrapper {
+    display: flex;
+    gap: 7px;
+    font-family: Inter, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: -0.3px;
+    background-color: rgba(8, 37, 37, 1);
+    /* Blend with the background */
+    border-radius: 15px;
+    /* Smooth rounded edges */
+    padding: 5px 10px;
+    flex-grow: 1;
+}
+
+.comment-avatar {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 36px;
+    border-radius: 50%;
+}
+
+.comment-input-wrapper input {
+    flex-grow: 1;
+    background: transparent;
+    /* Blend input field with the background */
+    border: none;
+    /* Remove border */
+    color: white;
+    font-size: 16px;
+    outline: none;
+    /* Remove default focus styles */
+}
+
+.comment-input-wrapper button {
+    background-color: rgba(24, 100, 100, 1);
+    /* Subtle contrast button */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-input-wrapper button:hover {
+    background-color: rgba(40, 150, 150, 1);
+    /* Slightly brighter on hover */
+}
+
+.reaction-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: SF UI Display, sans-serif;
+    color: rgba(153, 153, 153, 1);
+    white-space: nowrap;
+    text-align: center;
+    justify-content: end;
+    margin: auto 0;
+}
+
+.reaction-emoji {
+    line-height: 2;
+    align-self: stretch;
+    width: 14px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.reaction-more {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 12px;
+    border-radius: 100px;
+    align-self: stretch;
+    margin: auto 0;
+    cursor: pointer;
+    background: transparent;
+    /* Remove white box */
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .post-card-wrapper {
+        max-width: 100%;
+        padding-right: 0px;
+    }
+
+    .user-info {
+        max-width: 100%;
+    }
+
+    .user-meta {
+        max-width: 100%;
+    }
+
+    .post-title {
+        margin-left: 2px;
+    }
+
+    .post-image {
+        max-width: 100%;
+    }
+
+    .action-buttons {
+        margin-left: 8px;
+    }
+
+    .comment-section {
+        max-width: 100%;
+    }
+
+    .reaction-wrapper {
+        white-space: initial;
+    }
+}
